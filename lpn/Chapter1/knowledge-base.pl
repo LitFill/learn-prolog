@@ -34,3 +34,17 @@ plays_guitar(vincent) :-
 plays_guitar(butch)   :-
     happy(butch)
 ;   listen_to_music(butch).
+
+'plays guitar'(ama).
+
+% loves(Name1, Name2) = Name1 loves Name2
+loves(vincent,   mia).
+loves(marcellus, mia).
+loves(pumpkin,   honey).
+loves(honey,     pumpkin).
+
+% jealous(Name1, Name2) = Name1 and Name2 love the same person
+jealous(X, Y) :-
+    loves(X, Z),
+    loves(Y, Z),
+    X \= Y.
