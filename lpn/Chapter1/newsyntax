@@ -1,0 +1,9 @@
+loves: vincent mia <-
+    man:   vincent,
+    woman: mia.
+||
+vv
+
+loves(vincent, mia) :-
+    man(vincent),
+    woman(mia).
